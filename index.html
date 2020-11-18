@@ -7,6 +7,12 @@
     <title>Real BDSM Test</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,6 +22,33 @@
             <p class="lead text-center">A more queer, updated kinky test for fun BDSM times with your partner(s)</p>
         </div>
     </div>
+
+    <div class="d-flex justify-content-center">
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Select your gender:</button>
+            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                data-reference="parent">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <button class="dropdown-item" id="gender">Male</button>
+                <button class="dropdown-item" id="gender">Female</button>
+                <button class="dropdown-item" id="gender">Transgender Male</button>
+                <button class="dropdown-item" id="gender">Transgender Female</button>
+                <button class="dropdown-item" id="gender">Genderqueer</button>
+                <button class="dropdown-item" id="gender">Genderfae</button>
+                <button class="dropdown-item" id="gender">Genderfaun</button>
+                <button class="dropdown-item" id="gender">Demigender</button>
+                <button class="dropdown-item" id="gender">Two Spirit</button>
+                <button class="dropdown-item" id="gender">Bigender</button>
+                <button class="dropdown-item" id="gender">Genderfluid</button>
+                <button class="dropdown-item" id="gender">Agender</button>
+                <button class="dropdown-item" id="gender">Nonbinary</button>
+            </div>
+        </div>
+    </div>
+
     <div class="d-flex justify-content-center">
         <div class="btn-toolbar" role="toolbar">
             <div class="btn-group mt-2 mr-2">
@@ -53,6 +86,18 @@
             </div>
         </div>
     </div>
+
+    <script type="text/javascript">
+        $('.dropdown-toggle').dropdown();
+        $("#gender").on("click", e => {
+            e.target.addClass("active");
+        });
+    </script>
+    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+    <script type='text/javascript'>
+        kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'M4M12PP8R');
+        kofiwidget2.draw();
+    </script>
 </body>
 
 </html>
